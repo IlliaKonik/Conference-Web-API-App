@@ -11,8 +11,6 @@ import java.util.Map;
 public class HomeController {
     @Value("${app.version}")
     private String appVersion;
-
-
     @GetMapping
     @RequestMapping("/")
     public Map getStatus() {
